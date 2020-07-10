@@ -24,6 +24,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -88,6 +89,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -119,6 +121,11 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "angular-six-student"
+  ,
+  "cli": {
+    "analytics": "c164089a-dd76-436e-860b-167877c681b1"
+  }
 }
