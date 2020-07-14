@@ -22,6 +22,8 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { ExpandingPanelComponent } from './expanding-panel/expanding-panel.component';
 import { CardComponent } from './card/card.component';
+import { routes } from './app.routes';
+import { ReactiveJsComponent } from './reactive-js/reactive-js.component'
 
 @NgModule({
   declarations: [
@@ -30,7 +32,8 @@ import { CardComponent } from './card/card.component';
     MyDashboardComponent,
     MyTableComponent,
     ExpandingPanelComponent,
-    CardComponent
+    CardComponent,
+    ReactiveJsComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +51,8 @@ import { CardComponent } from './card/card.component';
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
-    MatExpansionModule
+    MatExpansionModule,
+    routes  
   ],
   providers: [],
   bootstrap: [AppComponent]
