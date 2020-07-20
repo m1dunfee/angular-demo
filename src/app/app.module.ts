@@ -10,6 +10,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
+import { MatBadgeModule } from '@angular/material';
 import { MatListModule } from '@angular/material/list';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { MyDashboardComponent } from './my-dashboard/my-dashboard.component';
@@ -52,7 +53,8 @@ import { ReactiveJsComponent } from './reactive-js/reactive-js.component'
     MatPaginatorModule,
     MatSortModule,
     MatExpansionModule,
-    routes  
+    MatBadgeModule,
+    routes    
   ],
   providers: [],
   bootstrap: [AppComponent]

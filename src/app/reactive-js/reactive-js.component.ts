@@ -1,6 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable, fromEvent } from 'rxjs';
 
+export class IconWithBadge {
+  symbol: string;
+  count: number;
+  color: string;
+  position?: string;
+  size?: string;
+}
+
 @Component({
   selector: 'app-reactive-js',
   templateUrl: './reactive-js.component.html',
@@ -8,11 +16,15 @@ import { Observable, fromEvent } from 'rxjs';
 })
 export class ReactiveJsComponent implements OnInit {
 
+  iconList: IconWithBadge[] = [
+    {symbol: 'home', count: 15, color: 'warn'}
+  ];
+
   constructor() { }
 
   ngOnInit() {
 
-    this.mouseLog();
+    // this.mouseLog();
 
     const obs = Observable.create((observer: any) => {
       observer.next('Welcome Back Developer');
